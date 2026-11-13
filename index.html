@@ -3,338 +3,563 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ENZZO DA SUL | Official Hub & Artista</title>
-  <meta name="description" content="Site oficial de Enzzo da Sul: Músicas, Clipes, Álbuns, Trajetória, Shows, Notícias e Redes Sociais.">
+  <title>ENZZO DA SUL | Oficial — Artista, Produtor & Dev</title>
+  <meta name="description" content="Site oficial de Enzzo da Sul — Ouça os hits com mais de 13 milhões de views, assista clipes, conheça a discografia completa e conecte-se nas redes.">
+  <meta name="keywords" content="Enzzo da Sul, funk, Roda de Funk, Viaja no Playloka, Danilo Chatinho, Favelado, Multiplicando, artista, produtor, desenvolvedor full stack">
+  <meta property="og:title" content="ENZZO DA SUL | Oficial">
+  <meta property="og:description" content="Hits com +13M de views. Ouça, assista e conecte-se.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800;900&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@700;800;900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Background Glow & Mesh -->
-  <div class="mesh-bg"></div>
-  <div class="glow-orb glow-1"></div>
-  <div class="glow-orb glow-2"></div>
 
-  <!-- Header / Navbar -->
-  <header class="navbar">
-    <div class="nav-container">
-      <a href="#" class="logo">ENZZO<span>DA SUL</span></a>
-      <nav class="nav-links">
-        <a href="#sobre">Trajetória</a>
-        <a href="#hits">Top Músicas</a>
-        <a href="#albuns">Discografia</a>
-        <a href="#videos">Clipes</a>
-        <a href="#tech">Full Stack & Tech</a>
-        <a href="#contato" class="btn-nav">Contato / Shows</a>
+  <!-- ═══ NAVBAR ═══ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <span class="logo-e">E</span>NZZO <span class="logo-accent">DA SUL</span>
+      </a>
+      <nav class="nav-menu" id="navMenu">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#discografia">Discografia</a>
+        <a href="#clipes">Clipes</a>
+        <a href="#numeros">Números</a>
+        <a href="#tech">Tech</a>
+        <a href="#redes">Redes</a>
       </nav>
-      <button class="mobile-toggle" id="menuToggle">☰</button>
+      <a href="https://open.spotify.com/search/Enzzo%20da%20Sul" target="_blank" class="nav-cta">Ouvir Agora</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-container">
-      <div class="hero-badge">🔥 ARTISTA • PRODUTOR • FULL STACK DEV</div>
-      <h1 class="hero-title">A VOZ DA SUL.<br><span class="gradient-text">A VISÃO DO FUTURO.</span></h1>
-      <p class="hero-subtitle">
-        Da vivência das ruas e palcos da Roda de Funk à vanguarda da tecnologia e inovação musical. Ouça os lançamentos, assista aos videoclipes oficiais e conheça o universo de <strong>Enzzo da Sul</strong>.
+  <!-- ═══ HERO ═══ -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg-video">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-label">ARTISTA · PRODUTOR · FULL STACK DEV</div>
+      <h1 class="hero-h1">
+        ENZZO<br>
+        <span class="hero-outline">DA SUL</span>
+      </h1>
+      <p class="hero-desc">
+        +13 milhões de views · Spotify · YouTube · Apple Music · Deezer<br>
+        Da Roda de Funk para o mundo. Da favela para a tecnologia.
       </p>
-      <div class="hero-actions">
-        <a href="https://open.spotify.com/search/Enzzo%20da%20Sul" target="_blank" class="btn-primary">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.586 14.424c-.18.295-.563.387-.857.207-2.35-1.435-5.308-1.76-8.793-.963-.335.077-.67-.133-.746-.468-.077-.334.132-.67.467-.746 3.808-.87 7.076-.51 9.722 1.113.294.18.387.562.207.857zm1.226-2.723c-.226.368-.712.484-1.08.258-2.69-1.654-6.79-2.133-9.972-1.168-.413.125-.851-.108-.976-.52-.125-.413.108-.852.52-.977 3.633-1.102 8.147-.568 11.25 1.34.368.225.483.712.258 1.067zm.106-2.835C14.692 8.95 9.375 8.775 6.297 9.71c-.496.15-1.022-.13-1.172-.627-.15-.496.13-1.022.627-1.171 3.535-1.073 9.404-.87 13.116 1.334.446.265.59 1.84.325 1.285-.265.446-.84.59-1.275.334z"/></svg>
-          Ouvir no Spotify
+      <div class="hero-btns">
+        <a href="https://open.spotify.com/search/Enzzo%20da%20Sul" target="_blank" class="btn btn-spotify">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg" alt="Spotify" width="22"> Spotify
         </a>
-        <a href="https://www.youtube.com/results?search_query=Enzzo+da+Sul" target="_blank" class="btn-secondary">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-          Canal YouTube
+        <a href="https://www.youtube.com/results?search_query=enzzo+da+sul" target="_blank" class="btn btn-yt">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube" width="24"> YouTube
         </a>
-        <a href="https://www.instagram.com/enzzodasul/" target="_blank" class="btn-outline">Instagram Oficial</a>
+        <a href="https://music.apple.com/us/search?term=enzzo+da+sul" target="_blank" class="btn btn-apple">
+          🍎 Apple Music
+        </a>
+        <a href="https://www.instagram.com/enzzodasul/" target="_blank" class="btn btn-ig">
+          📸 Instagram
+        </a>
       </div>
+    </div>
+    <div class="scroll-hint">
+      <span>↓</span>
+    </div>
+  </section>
 
-      <!-- Quick Metrics -->
-      <div class="hero-stats">
-        <div class="stat-card">
-          <span class="stat-number">100K+</span>
-          <span class="stat-label">Plays & Visualizações</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-number">+10</span>
-          <span class="stat-label">Hits & Singles Lançados</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-number">Roda de Funk</span>
-          <span class="stat-label">Histórico de Produção & Show</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-number">Tech + Art</span>
-          <span class="stat-label">Full Stack & Inovação</span>
+  <!-- ═══ NUMBERS BAR ═══ -->
+  <section class="numbers-bar" id="numeros">
+    <div class="container numbers-grid">
+      <div class="num-item">
+        <span class="num-val" data-target="13000000">13M+</span>
+        <span class="num-label">Views YouTube</span>
+      </div>
+      <div class="num-item">
+        <span class="num-val">20+</span>
+        <span class="num-label">Músicas & Singles</span>
+      </div>
+      <div class="num-item">
+        <span class="num-val">5+</span>
+        <span class="num-label">Plataformas Digitais</span>
+      </div>
+      <div class="num-item">
+        <span class="num-val">3+</span>
+        <span class="num-label">Anos na Roda de Funk</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SOBRE ═══ -->
+  <section class="section sobre" id="sobre">
+    <div class="container sobre-grid">
+      <div class="sobre-img">
+        <img src="https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg" alt="Enzzo da Sul" onerror="this.style.display='none'; this.parentElement.classList.add('sobre-img-fallback');">
+        <div class="sobre-img-overlay"></div>
+      </div>
+      <div class="sobre-text">
+        <span class="section-tag">QUEM É</span>
+        <h2 class="section-title">ENZZO DA SUL</h2>
+        <p>
+          <strong>Enzzo José Caetano Andrade Marchesotti</strong>, mais conhecido como <strong>Enzzo da Sul</strong>, é artista, cantor, produtor musical e desenvolvedor Full Stack. Nascido e criado em <strong>Juiz de Fora – MG</strong>, construiu sua trajetória na cena do funk com autenticidade, letras que refletem a vivência real e um flow que marca território.
+        </p>
+        <p>
+          Com passagem de <strong>3+ anos na Roda de Funk Oficial</strong> como coordenador de campanhas e produção audiovisual, acumulou experiência de palco, estúdio e bastidores que poucos artistas da nova geração possuem.
+        </p>
+        <p>
+          Seu clipe <em>"Viaja no Playloka"</em> com Danilo Chatinho ultrapassou a marca de <strong>13 milhões de visualizações</strong>. Seus lançamentos estão presentes no Spotify, YouTube Music, Apple Music, Deezer, SoundCloud e todas as plataformas digitais.
+        </p>
+        <div class="sobre-badges">
+          <span>🎤 Artista & Cantor</span>
+          <span>🎬 Produtor Audiovisual</span>
+          <span>💻 Full Stack Developer</span>
+          <span>📍 Juiz de Fora – MG</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Player de Destaque / Single Atual -->
-  <section class="featured-track">
+  <!-- ═══ DISCOGRAFIA — RANKING COMPLETO ═══ -->
+  <section class="section discografia" id="discografia">
     <div class="container">
-      <div class="glass-box player-card">
-        <div class="player-info">
-          <span class="pill-accent">EM ALTA • SINGLE DESTAQUE</span>
-          <h2 id="currentTrackTitle">Conheço Todos mas Ando com Poucos</h2>
-          <p class="track-sub">Enzzo da Sul feat. MC Xenon • Produção & Flow</p>
-          <div class="player-controls">
-            <button class="btn-play" id="mainPlayBtn">▶ Tocar Trecho / Prévia</button>
-            <span class="status-indicator">● Transmitindo nas plataformas</span>
+      <span class="section-tag center">DISCOGRAFIA & RANKING</span>
+      <h2 class="section-title center">TODAS AS MÚSICAS</h2>
+      <p class="section-sub center">Ranking por popularidade · Todas as plataformas · Catálogo completo</p>
+
+      <!-- Mega Hit -->
+      <div class="track-featured glass">
+        <div class="track-f-thumb">
+          <img src="https://img.youtube.com/vi/VIAJA_PLAYLOKA_ID/hqdefault.jpg" alt="Viaja no Playloka" onerror="this.src='https://via.placeholder.com/480x270/1a1a2e/8b5cf6?text=Viaja+no+Playloka';">
+          <div class="track-f-badge">👑 #1 MEGA HIT</div>
+        </div>
+        <div class="track-f-info">
+          <h3>Viaja no Playloka — CLIPE OFICIAL</h3>
+          <p class="track-f-artist">Danilo Chatinho & Enzzo da Sul · Thiago Gravações</p>
+          <div class="track-f-stats">
+            <span class="stat-fire">🔥 13M+ views</span>
+            <span>📅 2021</span>
+            <span>⏱ 2:24</span>
+          </div>
+          <div class="track-f-links">
+            <a href="https://www.youtube.com/results?search_query=Danilo+Chatinho+Enzzo+da+Sul+Viaja+no+Playloka" target="_blank" class="btn btn-sm btn-yt">▶ YouTube</a>
+            <a href="https://open.spotify.com/search/Viaja%20no%20Playloka%20Enzzo" target="_blank" class="btn btn-sm btn-spotify">● Spotify</a>
           </div>
         </div>
-        <div class="player-cover">
-          <div class="vinyl-disc">
-            <div class="disc-inner"></div>
+      </div>
+
+      <!-- Track List -->
+      <div class="tracks-table">
+
+        <div class="track-row glass">
+          <span class="t-rank gold">02</span>
+          <div class="t-thumb"><img src="https://img.youtube.com/vi/EMPINA_ID/hqdefault.jpg" alt="" onerror="this.src='https://via.placeholder.com/120x68/1a1a2e/06b6d4?text=Empina';"></div>
+          <div class="t-info">
+            <h4>Montagem – Empina na Onda (Mandelão)</h4>
+            <p>DJ C4 · Enzzo da Sul · MC Doug · Tá no Helipa</p>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Seção Trajetória / Bio -->
-  <section id="sobre" class="section bio-section">
-    <div class="container">
-      <div class="section-header">
-        <span class="badge">HISTÓRIA & IDENTIDADE</span>
-        <h2>QUEM É ENZZO DA SUL</h2>
-        <p>A força da comunidade combinada com técnica, presença de palco e arquitetura digital.</p>
-      </div>
-
-      <div class="bio-grid">
-        <div class="bio-card glass-box">
-          <div class="bio-icon">🎤</div>
-          <h3>Na Música & Cena Urbana</h3>
-          <p>
-            Com raízes consolidadas no funk consciente e de fluxo, Enzzo da Sul construiu uma identidade marcante através de letras autênticas, flow diferenciado e produções que ecoam pelas comunidades e pistas do Brasil. Sua vivência inclui atuação estratégica na produção e campanhas da conceituada <strong>Roda de Funk Oficial</strong>.
-          </p>
+          <span class="t-views">561K views</span>
+          <span class="t-year">2020</span>
+          <a href="https://www.youtube.com/results?search_query=Enzzo+da+Sul+Empina+na+Onda+DJ+C4" target="_blank" class="t-play">▶</a>
         </div>
 
-        <div class="bio-card glass-box">
-          <div class="bio-icon">💻</div>
-          <h3>Full Stack & Arquitetura Web</h3>
-          <p>
-            Mais do que artista, Enzzo une criatividade e exatidão técnica: atua no desenvolvimento Full Stack moderno (React, Node.js, TypeScript, Python e Inteligência Artificial), participante do <strong>Bootcamp Itaú 2026</strong> pela DIO e Codi Academy, desenvolvendo sistemas de alta escala.
-          </p>
+        <div class="track-row glass">
+          <span class="t-rank gold">03</span>
+          <div class="t-thumb"><img src="https://via.placeholder.com/120x68/1a1a2e/f59e0b?text=Papo" alt=""></div>
+          <div class="t-info">
+            <h4>Papo de Melhoria</h4>
+            <p>MC Bobô · Enzzo da Sul · MC Dym · MC Tikinho · MC Juninho da Dez · Roda de Funk Oficial</p>
+          </div>
+          <span class="t-views">281K views</span>
+          <span class="t-year">2022</span>
+          <a href="https://www.youtube.com/results?search_query=Papo+de+Melhoria+Enzzo+da+Sul+Roda+de+Funk" target="_blank" class="t-play">▶</a>
         </div>
 
-        <div class="bio-card glass-box">
-          <div class="bio-icon">⚡</div>
-          <h3>Visão de Futuro</h3>
-          <p>
-            Unindo o audiovisual internacional (com passagens por emissoras como Canal 9 México) à tecnologia e musicalidade, Enzzo se consolida como uma nova referência multidisciplinar de artista completo na era da Inteligência Artificial.
-          </p>
+        <div class="track-row glass">
+          <span class="t-rank">04</span>
+          <div class="t-thumb"><img src="https://via.placeholder.com/120x68/1a1a2e/ef4444?text=Favelado" alt=""></div>
+          <div class="t-info">
+            <h4>Favelado / Favelado de Fé</h4>
+            <p>Enzzo da Sul · Roda de Funk / Satélite Funk</p>
+          </div>
+          <span class="t-views">Hit</span>
+          <span class="t-year">—</span>
+          <a href="https://www.youtube.com/results?search_query=Enzzo+da+Sul+Favelado+de+Fe" target="_blank" class="t-play">▶</a>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Ranking Top Músicas Mais Famosas -->
-  <section id="hits" class="section hits-section">
-    <div class="container">
-      <div class="section-header">
-        <span class="badge">TOP HITS & RANKING</span>
-        <h2>AS MAIS TOCADAS</h2>
-        <p>As faixas que marcaram época e explodiram nos fones e paredões.</p>
-      </div>
-
-      <div class="tracks-list">
-        <div class="track-row glass-box">
-          <span class="track-rank">01</span>
-          <div class="track-detail">
+        <div class="track-row glass">
+          <span class="t-rank">05</span>
+          <div class="t-thumb"><img src="https://via.placeholder.com/120x68/1a1a2e/8b5cf6?text=Conheco" alt=""></div>
+          <div class="t-info">
             <h4>Conheço Todos mas Ando com Poucos</h4>
             <p>Enzzo da Sul feat. MC Xenon</p>
           </div>
-          <span class="track-tag">Mais Famosa</span>
-          <a href="https://www.youtube.com/results?search_query=Enzzo+da+Sul+Conheco+todos+mas+ando+com+poucos" target="_blank" class="track-link">Ouvir ↗</a>
+          <span class="t-views">Hit</span>
+          <span class="t-year">—</span>
+          <a href="https://www.youtube.com/results?search_query=Enzzo+da+Sul+MC+Xenon+Conheco+Todos" target="_blank" class="t-play">▶</a>
         </div>
 
-        <div class="track-row glass-box">
-          <span class="track-rank">02</span>
-          <div class="track-detail">
-            <h4>Favelado / Favelado de Fé</h4>
-            <p>Enzzo da Sul • Roda de Funk / Satélite Funk</p>
-          </div>
-          <span class="track-tag">Consciente</span>
-          <a href="https://www.youtube.com/results?search_query=Enzzo+da+Sul+Favelado" target="_blank" class="track-link">Ouvir ↗</a>
-        </div>
-
-        <div class="track-row glass-box">
-          <span class="track-rank">03</span>
-          <div class="track-detail">
+        <div class="track-row glass">
+          <span class="t-rank">06</span>
+          <div class="t-thumb"><img src="https://via.placeholder.com/120x68/1a1a2e/06b6d4?text=Multiplicando" alt=""></div>
+          <div class="t-info">
             <h4>Multiplicando</h4>
-            <p>Enzzo da Sul • Flow & Visão de Progresso</p>
+            <p>Enzzo da Sul</p>
           </div>
-          <span class="track-tag">Hit</span>
-          <a href="https://www.youtube.com/results?search_query=Enzzo+da+Sul+Multiplicando" target="_blank" class="track-link">Ouvir ↗</a>
+          <span class="t-views">Hit</span>
+          <span class="t-year">—</span>
+          <a href="https://www.youtube.com/results?search_query=Enzzo+da+Sul+Multiplicando" target="_blank" class="t-play">▶</a>
         </div>
 
-        <div class="track-row glass-box">
-          <span class="track-rank">04</span>
-          <div class="track-detail">
+        <div class="track-row glass">
+          <span class="t-rank">07</span>
+          <div class="t-thumb"><img src="https://via.placeholder.com/120x68/1a1a2e/f43f5e?text=Embrazar" alt=""></div>
+          <div class="t-info">
             <h4>Deixa Ela Embrazar</h4>
-            <p>Enzzo da Sul • Pista & Baile</p>
+            <p>Enzzo da Sul</p>
           </div>
-          <span class="track-tag">Baile</span>
-          <a href="https://www.youtube.com/results?search_query=Enzzo+da+Sul+Deixa+Ela+Embrazar" target="_blank" class="track-link">Ouvir ↗</a>
+          <span class="t-views">Hit</span>
+          <span class="t-year">—</span>
+          <a href="https://www.youtube.com/results?search_query=Enzzo+da+Sul+Deixa+Ela+Embrazar" target="_blank" class="t-play">▶</a>
         </div>
 
-        <div class="track-row glass-box">
-          <span class="track-rank">05</span>
-          <div class="track-detail">
-            <h4>Montagem - Empina na Onda</h4>
-            <p>Enzzo da Sul & DJ C4</p>
+        <div class="track-row glass">
+          <span class="t-rank">08</span>
+          <div class="t-thumb"><img src="https://via.placeholder.com/120x68/1a1a2e/10b981?text=Sensacional" alt=""></div>
+          <div class="t-info">
+            <h4>Sensacional</h4>
+            <p>Enzzo da Sul & Éo Bacana de Recife</p>
           </div>
-          <span class="track-tag">Collab Pesada</span>
-          <a href="https://www.youtube.com/results?search_query=Enzzo+da+Sul+Montagem+Empina+na+Onda" target="_blank" class="track-link">Ouvir ↗</a>
+          <span class="t-views">Single</span>
+          <span class="t-year">—</span>
+          <a href="https://www.youtube.com/results?search_query=Enzzo+da+Sul+Sensacional" target="_blank" class="t-play">▶</a>
+        </div>
+
+        <div class="track-row glass">
+          <span class="t-rank">09</span>
+          <div class="t-thumb"><img src="https://via.placeholder.com/120x68/1a1a2e/a855f7?text=Talentin" alt=""></div>
+          <div class="t-info">
+            <h4>Desce No Talentin</h4>
+            <p>Enzzo da Sul · DJ LKC Original · CarlosVerso · MC Beatriz</p>
+          </div>
+          <span class="t-views">Single</span>
+          <span class="t-year">—</span>
+          <a href="https://www.youtube.com/results?search_query=Enzzo+da+Sul+Desce+no+Talentin" target="_blank" class="t-play">▶</a>
+        </div>
+
+        <div class="track-row glass">
+          <span class="t-rank">10</span>
+          <div class="t-thumb"><img src="https://via.placeholder.com/120x68/1a1a2e/f59e0b?text=Cadeira" alt=""></div>
+          <div class="t-info">
+            <h4>Festa Da Cadeira (Acoustic)</h4>
+            <p>Enzzo da Sul · ADF No Beat</p>
+          </div>
+          <span class="t-views">Single</span>
+          <span class="t-year">—</span>
+          <a href="https://www.youtube.com/results?search_query=Enzzo+da+Sul+Festa+da+Cadeira" target="_blank" class="t-play">▶</a>
+        </div>
+
+        <div class="track-row glass">
+          <span class="t-rank">11</span>
+          <div class="t-thumb"><img src="https://via.placeholder.com/120x68/1a1a2e/06b6d4?text=Cego" alt=""></div>
+          <div class="t-info">
+            <h4>Cego, Surdo e Mudo</h4>
+            <p>Enzzo da Sul · Roda de Funk</p>
+          </div>
+          <span class="t-views">Single</span>
+          <span class="t-year">—</span>
+          <a href="https://www.youtube.com/results?search_query=Enzzo+da+Sul+Cego+Surdo+e+Mudo" target="_blank" class="t-play">▶</a>
+        </div>
+
+        <div class="track-row glass">
+          <span class="t-rank">12</span>
+          <div class="t-thumb"><img src="https://via.placeholder.com/120x68/1a1a2e/ef4444?text=Trabalho" alt=""></div>
+          <div class="t-info">
+            <h4>Eu Trabalho Todo Dia de Segunda a Sexta Feira</h4>
+            <p>Enzzo da Sul</p>
+          </div>
+          <span class="t-views">Single</span>
+          <span class="t-year">—</span>
+          <a href="https://www.youtube.com/results?search_query=Enzzo+da+Sul+Trabalho+todo+dia" target="_blank" class="t-play">▶</a>
+        </div>
+
+        <div class="track-row glass">
+          <span class="t-rank">13</span>
+          <div class="t-thumb"><img src="https://via.placeholder.com/120x68/1a1a2e/8b5cf6?text=Playboy" alt=""></div>
+          <div class="t-info">
+            <h4>Nunca Mais Tu Quer Play Boy (Acoustic)</h4>
+            <p>Enzzo da Sul & Junior Gobira</p>
+          </div>
+          <span class="t-views">Single</span>
+          <span class="t-year">—</span>
+          <a href="https://www.youtube.com/results?search_query=Enzzo+da+Sul+Nunca+mais+tu+quer+playboy" target="_blank" class="t-play">▶</a>
+        </div>
+
+        <div class="track-row glass">
+          <span class="t-rank">14</span>
+          <div class="t-thumb"><img src="https://via.placeholder.com/120x68/1a1a2e/10b981?text=Focado" alt=""></div>
+          <div class="t-info">
+            <h4>Focado em Ficar Bem</h4>
+            <p>CL Fabulloso & Enzzo da Sul · Prod. Davi Oliver · Roda de Funk</p>
+          </div>
+          <span class="t-views">9.4K views</span>
+          <span class="t-year">2022</span>
+          <a href="https://www.youtube.com/results?search_query=CL+Fabulloso+Enzzo+da+Sul+Focado+em+Ficar+Bem" target="_blank" class="t-play">▶</a>
+        </div>
+
+        <div class="track-row glass">
+          <span class="t-rank">15</span>
+          <div class="t-thumb"><img src="https://via.placeholder.com/120x68/1a1a2e/a855f7?text=Bandida" alt=""></div>
+          <div class="t-info">
+            <h4>Bandida Demais</h4>
+            <p>Enzzo da Sul & Vytinho NG</p>
+          </div>
+          <span class="t-views">Single</span>
+          <span class="t-year">—</span>
+          <a href="https://www.youtube.com/results?search_query=Enzzo+da+Sul+Bandida+Demais" target="_blank" class="t-play">▶</a>
+        </div>
+
+        <div class="track-row glass">
+          <span class="t-rank">16</span>
+          <div class="t-thumb"><img src="https://via.placeholder.com/120x68/1a1a2e/f59e0b?text=Liberdade" alt=""></div>
+          <div class="t-info">
+            <h4>Liberdade pro Oruam</h4>
+            <p>Enzzo da Sul · Morrão Beats · DJ WM Gordinho Sexy</p>
+          </div>
+          <span class="t-views">Single</span>
+          <span class="t-year">—</span>
+          <a href="https://www.youtube.com/results?search_query=Enzzo+da+Sul+Liberdade+pro+Oruam" target="_blank" class="t-play">▶</a>
+        </div>
+
+        <div class="track-row glass">
+          <span class="t-rank">17</span>
+          <div class="t-thumb"><img src="https://via.placeholder.com/120x68/1a1a2e/06b6d4?text=Tropa" alt=""></div>
+          <div class="t-info">
+            <h4>Tropa Do Pisa Na Cara</h4>
+            <p>Enzzo da Sul</p>
+          </div>
+          <span class="t-views">Single</span>
+          <span class="t-year">—</span>
+          <a href="https://www.youtube.com/results?search_query=Enzzo+da+Sul+Tropa+do+Pisa+na+Cara" target="_blank" class="t-play">▶</a>
+        </div>
+
+        <div class="track-row glass">
+          <span class="t-rank">18</span>
+          <div class="t-thumb"><img src="https://via.placeholder.com/120x68/1a1a2e/ef4444?text=Brota" alt=""></div>
+          <div class="t-info">
+            <h4>Brota Para Se Envolver</h4>
+            <p>Enzzo da Sul</p>
+          </div>
+          <span class="t-views">Single</span>
+          <span class="t-year">—</span>
+          <a href="https://www.youtube.com/results?search_query=Enzzo+da+Sul+Brota+Para+Se+Envolver" target="_blank" class="t-play">▶</a>
+        </div>
+
+      </div>
+
+      <!-- Albums -->
+      <div class="albums-row">
+        <div class="album-card glass">
+          <div class="album-cover album-pela-pista">
+            <span class="album-label">ÁLBUM</span>
+          </div>
+          <h3>Pela Pista</h3>
+          <p>Projeto conceitual de identidade e fluxo urbano</p>
+          <div class="album-platforms">Spotify · Apple Music · Deezer · YouTube Music</div>
+        </div>
+        <div class="album-card glass">
+          <div class="album-cover album-so-funk">
+            <span class="album-label">ÁLBUM</span>
+          </div>
+          <h3>Só Funk 130</h3>
+          <p>Compilação de produções de pista a 130 BPM</p>
+          <div class="album-platforms">Spotify · Apple Music · Deezer · YouTube Music</div>
+        </div>
+        <div class="album-card glass">
+          <div class="album-cover album-roda">
+            <span class="album-label">SÉRIE</span>
+          </div>
+          <h3>Sessões Roda de Funk</h3>
+          <p>Participações históricas na maior produtora de funk do Brasil</p>
+          <div class="album-platforms">YouTube · Roda de Funk Oficial</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Seção Discografia / Álbuns & Projetos -->
-  <section id="albuns" class="section albums-section">
+  <!-- ═══ CLIPES / VÍDEOS ═══ -->
+  <section class="section clipes" id="clipes">
     <div class="container">
-      <div class="section-header">
-        <span class="badge">DISCOGRAFIA & PROJETOS</span>
-        <h2>ÁLBUNS & LANÇAMENTOS</h2>
-      </div>
+      <span class="section-tag center">AUDIOVISUAL</span>
+      <h2 class="section-title center">CLIPES & VÍDEOS</h2>
 
-      <div class="albums-grid">
-        <div class="album-card glass-box">
-          <div class="album-art album-1">
-            <span class="album-year">PROJETO DESTAQUE</span>
+      <div class="clips-grid">
+        <a href="https://www.youtube.com/results?search_query=Danilo+Chatinho+Enzzo+da+Sul+Viaja+no+Playloka" target="_blank" class="clip-card glass">
+          <div class="clip-thumb">
+            <img src="https://via.placeholder.com/560x315/1e1b4b/ffffff?text=VIAJA+NO+PLAYLOKA+-+13M+Views" alt="Viaja no Playloka">
+            <div class="clip-play">▶</div>
+            <span class="clip-duration">2:24</span>
+            <span class="clip-views">13M+ views</span>
           </div>
-          <div class="album-info">
-            <h3>Pela Pista</h3>
-            <p>O projeto conceitual que reúne o ritmo urbano, vivência e identidade lírica direta.</p>
-            <div class="album-meta">Disponível em: Spotify • YouTube • Deezer • Apple Music</div>
-          </div>
-        </div>
+          <h4>Viaja no Playloka — Clipe Oficial</h4>
+          <p>Danilo Chatinho & Enzzo da Sul · Thiago Gravações</p>
+        </a>
 
-        <div class="album-card glass-box">
-          <div class="album-art album-2">
-            <span class="album-year">SÉRIE / COLLABS</span>
+        <a href="https://www.youtube.com/results?search_query=Enzzo+da+Sul+Empina+na+Onda+DJ+C4+mandelao" target="_blank" class="clip-card glass">
+          <div class="clip-thumb">
+            <img src="https://via.placeholder.com/560x315/312e81/ffffff?text=EMPINA+NA+ONDA+-+561K+Views" alt="Empina na Onda">
+            <div class="clip-play">▶</div>
+            <span class="clip-duration">2:32</span>
+            <span class="clip-views">561K views</span>
           </div>
-          <div class="album-info">
-            <h3>Sessões Roda de Funk & Produtora</h3>
-            <p>Participações marcantes em um dos maiores palcos da história do funk carioca e nacional.</p>
-            <div class="album-meta">Produção, Direção e Interpretação</div>
+          <h4>Montagem – Empina na Onda (Mandelão)</h4>
+          <p>DJ C4 · Enzzo da Sul · MC Doug · Tá no Helipa</p>
+        </a>
+
+        <a href="https://www.youtube.com/results?search_query=Papo+de+Melhoria+MC+Bobo+Enzzo+da+Sul+Roda+de+Funk" target="_blank" class="clip-card glass">
+          <div class="clip-thumb">
+            <img src="https://via.placeholder.com/560x315/701a75/ffffff?text=PAPO+DE+MELHORIA+-+281K+Views" alt="Papo de Melhoria">
+            <div class="clip-play">▶</div>
+            <span class="clip-duration">7:15</span>
+            <span class="clip-views">281K views</span>
           </div>
-        </div>
+          <h4>Papo de Melhoria</h4>
+          <p>MC Bobô · Enzzo da Sul · MC Dym · MC Tikinho · MC Juninho da Dez · Roda de Funk</p>
+        </a>
+
+        <a href="https://www.youtube.com/results?search_query=Enzzo+da+Sul+Favelado" target="_blank" class="clip-card glass">
+          <div class="clip-thumb">
+            <img src="https://via.placeholder.com/560x315/1a1a2e/8b5cf6?text=FAVELADO+DE+FE" alt="Favelado de Fé">
+            <div class="clip-play">▶</div>
+          </div>
+          <h4>Favelado / Favelado de Fé</h4>
+          <p>Enzzo da Sul · Roda de Funk / Satélite Funk</p>
+        </a>
+
+        <a href="https://www.youtube.com/results?search_query=Enzzo+da+Sul+MC+Xenon+Conheco+todos" target="_blank" class="clip-card glass">
+          <div class="clip-thumb">
+            <img src="https://via.placeholder.com/560x315/1a1a2e/06b6d4?text=CONHECO+TODOS+MAS+ANDO+COM+POUCOS" alt="Conheço Todos">
+            <div class="clip-play">▶</div>
+          </div>
+          <h4>Conheço Todos mas Ando com Poucos</h4>
+          <p>Enzzo da Sul feat. MC Xenon</p>
+        </a>
+
+        <a href="https://www.youtube.com/results?search_query=CL+Fabulloso+Enzzo+da+Sul+Focado+em+Ficar+Bem" target="_blank" class="clip-card glass">
+          <div class="clip-thumb">
+            <img src="https://via.placeholder.com/560x315/1a1a2e/10b981?text=FOCADO+EM+FICAR+BEM" alt="Focado em Ficar Bem">
+            <div class="clip-play">▶</div>
+            <span class="clip-views">9.4K views</span>
+          </div>
+          <h4>Focado em Ficar Bem</h4>
+          <p>CL Fabulloso & Enzzo da Sul · Prod. Davi Oliver · Roda de Funk</p>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- Videoclipes & Galeria -->
-  <section id="videos" class="section videos-section">
+  <!-- ═══ TECH HUB ═══ -->
+  <section class="section tech" id="tech">
     <div class="container">
-      <div class="section-header">
-        <span class="badge">AUDIOVISUAL</span>
-        <h2>VIDEOCLIPES OFICIAIS</h2>
-        <p>Assista aos lançamentos direto do YouTube.</p>
-      </div>
-
-      <div class="videos-grid">
-        <div class="video-card glass-box">
-          <div class="video-thumb">
-            <span class="play-icon">▶</span>
-          </div>
-          <div class="video-info">
-            <h4>Enzzo da Sul na Roda de Funk</h4>
-            <p>Sessões ao vivo gravadas nos maiores eventos da cena.</p>
-            <a href="https://www.youtube.com/results?search_query=Enzzo+da+Sul+Roda+de+funk" target="_blank" class="btn-watch">Assistir no YouTube ↗</a>
-          </div>
-        </div>
-
-        <div class="video-card glass-box">
-          <div class="video-thumb thumb-2">
-            <span class="play-icon">▶</span>
-          </div>
-          <div class="video-info">
-            <h4>Favelado de Fé & Conheço Todos</h4>
-            <p>Produções e clipes que acumulam milhares de visualizações.</p>
-            <a href="https://www.youtube.com/results?search_query=Enzzo+da+Sul" target="_blank" class="btn-watch">Assistir no YouTube ↗</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Seção Tech / Full Stack Dev -->
-  <section id="tech" class="section tech-section">
-    <div class="container">
-      <div class="glass-box tech-banner">
-        <div class="tech-content">
-          <span class="badge">ECOSSISTEMA TECNOLÓGICO</span>
-          <h2>FULL STACK DEVELOPER</h2>
+      <div class="tech-split glass">
+        <div class="tech-left">
+          <span class="section-tag">ALÉM DOS PALCOS</span>
+          <h2 class="section-title">FULL STACK<br>DEVELOPER</h2>
           <p>
-            Além dos palcos, Enzzo Marchesotti projeta o futuro com código limpo. Participante do <strong>Bootcamp Itaú 2026</strong> na Digital Innovation One (DIO), criando soluções com:
+            Enzzo Marchesotti também projeta o futuro com código limpo e arquitetura de software. Participante do <strong>Bootcamp Itaú 2026 (DIO)</strong>, estudante na <strong>Codi Academy</strong> e criador de soluções web e automações com Inteligência Artificial.
           </p>
-          <div class="tech-tags">
-            <span>React</span>
-            <span>TypeScript</span>
-            <span>Node.js</span>
-            <span>Python</span>
-            <span>Inteligência Artificial (Gemini)</span>
-            <span>PostgreSQL</span>
-            <span>Tailwind CSS</span>
+          <div class="tech-stack">
+            <span>React</span><span>TypeScript</span><span>Node.js</span>
+            <span>Python</span><span>Express</span><span>PHP</span>
+            <span>C#</span><span>PostgreSQL</span><span>MongoDB</span>
+            <span>Tailwind CSS</span><span>Vue.js</span><span>Git/GitHub</span>
+            <span>Google Gemini API</span><span>OpenAI</span><span>Figma</span>
           </div>
         </div>
-        <div class="tech-cta">
-          <a href="https://github.com/enzzodasul" target="_blank" class="btn-primary">Ver GitHub @enzzodasul ↗</a>
-          <a href="https://www.linkedin.com/in/enzzo-marchesotti-6b361744a/" target="_blank" class="btn-secondary">LinkedIn Oficial ↗</a>
+        <div class="tech-right">
+          <div class="tech-card glass">
+            <span class="tc-icon">💻</span>
+            <h4>GitHub</h4>
+            <p>Projetos open source, portfólio e código</p>
+            <a href="https://github.com/enzzodasul" target="_blank">@enzzodasul ↗</a>
+          </div>
+          <div class="tech-card glass">
+            <span class="tc-icon">💼</span>
+            <h4>LinkedIn</h4>
+            <p>Networking e carreira</p>
+            <a href="https://www.linkedin.com/in/enzzo-marchesotti-6b361744a/" target="_blank">Enzzo Marchesotti ↗</a>
+          </div>
+          <div class="tech-card glass">
+            <span class="tc-icon">🏆</span>
+            <h4>Bootcamp Itaú 2026</h4>
+            <p>Digital Innovation One (DIO)</p>
+            <a href="https://dio.me" target="_blank">dio.me ↗</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contato & Redes Sociais -->
-  <section id="contato" class="section contact-section">
+  <!-- ═══ REDES SOCIAIS ═══ -->
+  <section class="section redes" id="redes">
     <div class="container">
-      <div class="section-header">
-        <span class="badge">CONEXÕES & BOOKING</span>
-        <h2>VAMOS CONECTAR</h2>
-        <p>Para shows, parcerias musicais, campanhas e projetos de tecnologia.</p>
-      </div>
+      <span class="section-tag center">CONECTE-SE</span>
+      <h2 class="section-title center">REDES & PLATAFORMAS</h2>
 
-      <div class="social-cards-grid">
-        <a href="https://www.instagram.com/enzzodasul/" target="_blank" class="social-box glass-box">
-          <div class="social-icon">📸</div>
+      <div class="social-mega-grid">
+        <a href="https://www.instagram.com/enzzodasul/" target="_blank" class="social-tile glass ig-tile">
+          <div class="st-icon">📸</div>
           <h3>Instagram</h3>
           <p>@enzzodasul</p>
+          <span class="st-action">Seguir ↗</span>
         </a>
-
-        <a href="https://www.youtube.com/results?search_query=Enzzo+da+Sul" target="_blank" class="social-box glass-box">
-          <div class="social-icon">🎥</div>
-          <h3>YouTube</h3>
-          <p>Clipes & Músicas</p>
-        </a>
-
-        <a href="https://open.spotify.com/search/Enzzo%20da%20Sul" target="_blank" class="social-box glass-box">
-          <div class="social-icon">🎧</div>
+        <a href="https://open.spotify.com/search/Enzzo%20da%20Sul" target="_blank" class="social-tile glass spotify-tile">
+          <div class="st-icon">🎧</div>
           <h3>Spotify</h3>
           <p>Perfil de Artista</p>
+          <span class="st-action">Ouvir ↗</span>
         </a>
-
-        <a href="https://github.com/enzzodasul" target="_blank" class="social-box glass-box">
-          <div class="social-icon">💻</div>
+        <a href="https://www.youtube.com/results?search_query=Enzzo+da+Sul" target="_blank" class="social-tile glass yt-tile">
+          <div class="st-icon">🎥</div>
+          <h3>YouTube</h3>
+          <p>Clipes & Músicas</p>
+          <span class="st-action">Assistir ↗</span>
+        </a>
+        <a href="https://music.apple.com/us/search?term=enzzo+da+sul" target="_blank" class="social-tile glass apple-tile">
+          <div class="st-icon">🍎</div>
+          <h3>Apple Music</h3>
+          <p>Álbuns & Singles</p>
+          <span class="st-action">Ouvir ↗</span>
+        </a>
+        <a href="https://github.com/enzzodasul" target="_blank" class="social-tile glass gh-tile">
+          <div class="st-icon">💻</div>
           <h3>GitHub</h3>
-          <p>Projetos & Código</p>
+          <p>@enzzodasul</p>
+          <span class="st-action">Ver Código ↗</span>
+        </a>
+        <a href="https://www.linkedin.com/in/enzzo-marchesotti-6b361744a/" target="_blank" class="social-tile glass li-tile">
+          <div class="st-icon">💼</div>
+          <h3>LinkedIn</h3>
+          <p>Enzzo Marchesotti</p>
+          <span class="st-action">Conectar ↗</span>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- ═══ FOOTER ═══ -->
   <footer class="footer">
-    <div class="container footer-content">
-      <p>© 2026 <strong>ENZZO DA SUL</strong> • Todos os direitos reservados.</p>
-      <p class="footer-sub">Música, Tecnologia & Visão de Futuro.</p>
+    <div class="container footer-inner">
+      <div class="footer-logo">ENZZO <span>DA SUL</span></div>
+      <p>Artista · Produtor · Full Stack Developer</p>
+      <p class="footer-copy">© 2026 Enzzo da Sul · Todos os direitos reservados</p>
     </div>
   </footer>
 
